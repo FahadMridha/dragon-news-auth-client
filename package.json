@@ -40,5 +40,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/FahadMridha/dragon-news-auth-client.git",
+  "author": "fahad <sohelcse16@gmail.com>",
+  "license": "MIT"
 }

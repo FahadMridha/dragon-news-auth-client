@@ -38,7 +38,7 @@ const NewsSummary = ({ news }) => {
               <Link to={`/news/${_id}`}>see more</Link>
             </p>
           ) : (
-            <p>{details}</p>
+            <>{details}</>
           )}
         </Card.Text>
       </Card.Body>

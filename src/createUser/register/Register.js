@@ -25,7 +25,7 @@ const Register = () => {
         form.reset();
         handlerUpdateProfile(name, photoURL);
         handleEmailVerification();
-        toast.success("Successfully toasted!");
+        toast.error("This didn't work.");
       })
       .catch((e) => {
         console.error(e);
@@ -51,7 +51,7 @@ const Register = () => {
     <Form onSubmit={handlerSubmit}>
       <Form.Group className="mb-3" controlId="formBasicName">
         <Form.Label>Your Name</Form.Label>
-        <Form.Control name="name" type="text" placeholder="Enter Youyr Name" />
+        <Form.Control name="name" type="text" placeholder="Enter Your Name" />
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Email address</Form.Label>

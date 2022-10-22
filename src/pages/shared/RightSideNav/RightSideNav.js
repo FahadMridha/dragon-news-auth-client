@@ -12,8 +12,8 @@ const RightSideNav = () => {
   const googleProvider = new GoogleAuthProvider();
   const handlerGoogleSignIN = () => {
     providerLogin(googleProvider)
-      .then((result) => {
-        const user = result.user.displayName;
+      .then(() => {
+        // const user = result.user.displayName;
         // console.log(user);
       })
       .catch((error) => console.log(error));
@@ -29,7 +29,7 @@ const RightSideNav = () => {
         </Button>
       </ButtonGroup>
       <div className="mt-4 mb-4">
-        <h3>Find Us On</h3>
+        <h3>Found Us On</h3>
         <ListGroup>
           <ListGroup.Item>Facebook</ListGroup.Item>
           <ListGroup.Item>WhatsApp</ListGroup.Item>

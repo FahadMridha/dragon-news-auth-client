@@ -44,20 +44,20 @@ const Header = () => {
             </NavDropdown>
           </Nav>
           <Nav>
-            <Nav.Link href="#deets">
+            <>
               {user?.uid ? (
-                <>
+                <div>
                   <span>{user?.displayName}</span>
                   <Button onClick={handlerLogOut}>Logout</Button>
-                </>
+                </div>
               ) : (
                 <>
                   <Link to="/login">Login</Link>
                   <Link to="/register">Register</Link>
                 </>
               )}
-            </Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
+            </>
+            <Link to="/profile">
               {user?.photoURL ? (
                 <Image
                   style={{ height: "30px" }}
@@ -67,7 +67,7 @@ const Header = () => {
               ) : (
                 <FaUser></FaUser>
               )}
-            </Nav.Link>
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
